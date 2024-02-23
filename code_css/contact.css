@@ -1,0 +1,294 @@
+:root{
+    --black: #121212;
+    --form_clr: #303030;
+    --btn_bck: #6c18188a;
+}
+::selection {
+  color: #e0e0e0;
+  background: #a717176a;
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--form_clr);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--btn_bck);
+}
+body {
+  background-color: var(--black);
+  color: white;
+  font-family: serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #983434;
+  text-decoration: none;
+}
+a:active{
+  color: darkred;
+}
+
+/*NAVBAR GEN*/
+.nav{
+  background-color: var(--black);
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; 
+  padding-top: 20px;
+}
+/*SHOP PROPS*/
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: var(--btn_bck);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--black);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+.cont{
+  background-color: var(--btn_bck);
+}
+.openbtn:hover {
+  background-color:var(--btn_bck);
+}
+/*LOGO PROPS*/
+.nav-logo{
+  transition: 0.3s;
+}
+.nav-logo:hover{
+  background-color: #3030305e;
+}
+#home-logo{
+  width: 75px;
+  aspect-ratio: 16/9;
+}
+/*CONTACT BTN*/
+.contact{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+/*JEZICI*/
+.languages{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.btn-lang{
+  background-color: transparent;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+.btn-lang:hover{
+  background-color: var(--btn_bck);
+}
+#eng-btn{
+  border-right: 2px darkred;
+  border-style: solid;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  padding-right: 10px;
+}
+/*NASLOVNI TEKST*/
+.ttl {
+  background-image: linear-gradient( #00000080, #00000080), url(../photos/cont_img.jpg);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 550px;
+}
+.ttl h1{
+  font-size: 60px;
+  font-weight: 600;
+  padding-left: 40px;
+}
+.inner_text{
+  display: flex;
+  background-color: #1212128d;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 0px 35px 40px;
+}
+.inner_text h2{
+  font-size: 35px;
+  font-weight: 500;
+}
+.inner_text h3{
+  font-size: 25px;
+}
+/*IKONICE*/
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform .5s; 
+  margin: 30px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card a img{
+  width: 50px;
+  aspect-ratio: 1;
+  margin-bottom: 20px;
+}
+
+/*FORM*/
+.container-fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form{
+  width: 70%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+#form label{
+  font-weight: 500;
+  font-size: larger;
+}
+#form h2{
+  text-align: center;
+}
+#form button{
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: var(--btn_bck);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+.input-control input{
+  border: 2px solid var(--form_clr);
+  border-radius: 4px;
+  background-color: var(--form_clr);
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+}
+.input-control input:focus{
+  outline: 0;
+}
+.input-control textarea{
+  border: 2px solid var(--form_clr);
+  border-radius: 4px;
+  background-color: var(--form_clr);
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+}
+.input-control textarea:focus{
+    outline: 0;
+}
+.input-control.success input {
+  border-color: #0fb107;
+}
+.input-control.error input {
+  border-color: #c71212;
+}
+.input-control .error {
+  color: #c71212;
+  font-size: 10px;
+  height: 13px;
+}
+.input-control.success textarea {
+  border-color: #0fb107;
+}
+.input-control.error textarea {
+  border-color: #c71212;
+}
+
+.lokacija{
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*FOOTER*/
+.footer{
+  padding: 50px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socials{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+.cprt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

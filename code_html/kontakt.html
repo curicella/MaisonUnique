@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../code_css/contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="./icon.ico">
+    <title> Contact Maison</title>
+    <script defer src="../code_js/form.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="grupa-nav" id="shop">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="./ukrasi.html">Ukrasi za kuću</a>
+                <a href="./namestaj.html">Nameštaj</a>
+                <a href="./mirisi.html">Mirisi</a>
+              </div>
+              
+              <button class="openbtn" onclick="openNav()">Kupuj</button>
+        </div>
+
+        <div class="nav-logo">
+            <a href="./pocetna.html"><img id="home-logo" src="./logo.png" alt="M"></a>
+        </div>
+
+        <div class="grupa-nav m-0" id="contact">
+            <a href="./kontakt.html"><button class="openbtn">Kontakt</button></a>
+        </div>
+    </nav>
+    
+    <div class="languages">
+        <a href="./contact-maison.html"><button class="btn-lang" id="eng-btn">🇬🇧</button></a>
+        <a href="./kontakt.html"><button class="btn-lang" id="srb-btn">🇷🇸</button></a>
+    </div>
+    <div class="ttl">
+        <h1>Javite nam se</h1>
+        <div class="inner_text">
+          <h2>Pišite nam, odgovorićemo u najkraćem mogućem roku</h2>
+          <h3>Vaše sugestije su nam veoma važne!</h3>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <a href="https://www.instagram.com/maisonunique_"><img id="ikonica" src="./insta.png" alt="Instagram"></a>
+                        <div class="card-body text-center">
+                            <p>Posetite naš instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <a href="./furniture.html"><img id="ikonica" src="./phone.png" alt="Phone"></a>
+                        <div class="card-body text-center">
+                            <p>Pozovite nas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <a href="https://www.facebook.com/profile.php?id=100086976265626"><img id="ikonica" src="./face.png" alt="Facebook"></a>
+                        <div class="card-body text-center">
+                            <p>Posetite našu Facebook stranicu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <form id="form" onsubmit="return false" action="/">
+            <h2 style="font-weight: lighter;">Voleli bi da čujemo vaše mišljenje!</h2>
+            <div id="line"></div>
+
+            <div class="input-control">
+                <label for="username">Vaše ime:</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Vaš email:</label>
+                <input  id="email" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="message">Ostavite nam poruku:</label>
+                <textarea id="poruka" rows = "10" cols = "50" name = "name"></textarea>
+                <div class="error"></div>
+            </div>
+            <button type="submit">Pošalji</button>
+        </form>
+    </div>
+    
+    <div class="lokacija">
+        <div id="line"></div>
+        <h3>Posetite našu prodavnicu i vidite našu robu uživo!</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d187.2431919936183!2d20.51947905329781!3d43.14390492336055!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2srs!4v1674225445613!5m2!1sen!2srs" 
+        width="75%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Prodavnica se nalazi 100m niz prolaz između Cosmo i Scarlet lounge barova</p>
+    </div>
+
+    <footer class="footer">
+        <div class="socials">
+            <a href="">Email</a>
+            <a href="https://www.instagram.com/maisonunique_">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100086976265626">Facebook</a>
+        </div>
+        <div class="cprt">
+          Project by Ela Curić
+        </div>
+    </footer>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="mu-js.js"></script>
+</body>
+</html>
